@@ -35,12 +35,25 @@ p {
     font-weight: 200;
     letter-spacing: 0.05rem;
 }
+.section-title {
+    border: 1px solid  gold;
+    padding: 10px;
+    border-radius: 0 30px 0 30px;
+    font-size: 4.0rem;
+    font-weight: 100;
+    color: var(--gradient--) ;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
 
 #nav-bar{
     background-color: var(--menu--);
     font-size: 1.4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -60,21 +73,13 @@ p {
     color: var(--cor-destaque--);
     transition: 0.3s all;
 }
+#btn-mobile{
+    display: none;
+}
 .container{
     min-height: 100vh;
     width: 100%; display: flex;
     align-items: center; justify-content: center;
-}
-.section-title {
-    background-image: linear-gradient(60deg, #122E40 0%, #0B1C26 100%);
-    font-size: 4rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
 }
 
 
@@ -317,16 +322,16 @@ p {
      width: 100px;
  }
  .conect-title{
-    background-color: #0B1C26;
-    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
     font-size: 4rem;
     font-weight: 500;
-    color: white;
+    color: var(--gradient--);
     margin-bottom: 10px;
     margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    text-align: center; 
+    text-align: center;
+    line-height: 90px; 
  }
 /*seção de contatos */
 
@@ -369,7 +374,90 @@ footer a:hover{
 }
 
 /* Media Query */
+@media (max-width:700px){
+    #btn-mobile{
+        display: block;
+    }
+    #menu{
+        text-align: left;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: var(--menu--);
+        transition: .6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav-bar.active #menu{
+        height: 200px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(255, 217, 0, 0.24);
+    }
+    #btn-mobile{
+        font-family: 'Poppins';
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 2.0rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+        gap: .5rem;
+    }
+    #hamburger{
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav-bar.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav-bar.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav-bar.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
 @media only screen and (min-width: 768px) {
+     /* seçao sobre */
+    #all-sobre .sobre-item {
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #all-sobre .sobre-projects .sobre-info{
+        height: 100%;
+    }
+    #all-sobre .sobre-projects .sobre-img{
+        height: 70px;
+    }
+    #all-sobre .sobre-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    /* seção sobre */
+
+
     #portfolio .project-item {
         flex-direction: row;
         height: 400px;
@@ -387,20 +475,5 @@ footer a:hover{
         flex-direction: row-reverse;
     }
 
-    /* seçao sobre */
-    #all-sobre .sobre-item {
-        flex-direction: row;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-    #all-sobre .sobre-projects .sobre-info{
-        height: 100%;
-    }
-    #all-sobre .sobre-projects .sobre-img{
-        height: 70px;
-    }
-    #all-sobre .sobre-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+   
 }
