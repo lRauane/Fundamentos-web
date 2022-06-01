@@ -50,7 +50,7 @@ p {
 }
 
 #nav-bar{
-    background-color: var(--menu--);
+    background-color:var(--menu--);
     font-size: 1.4rem;
     display: flex;
     flex-direction: column;
@@ -73,6 +73,15 @@ p {
     color: var(--cor-destaque--);
     transition: 0.3s all;
 }
+#menu {  
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+#menu a {
+    display: block;
+    padding: 0.5rem;
+  }
 #btn-mobile{
     display: none;
 }
@@ -310,8 +319,42 @@ p {
     transform: scale(1.1);
 }
 /* seção de contatos */
-#all-conect {
-    
+.conect-title {
+    border: 1px solid  gold;
+    padding: 20px;
+    border-radius: 0 30px 0 30px;
+    font-size: 4.0rem;
+    font-weight: 100;
+    color: var(--gradient--) ;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+#conect .conect-me{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#conect .header h1{
+    margin-bottom: 50px;
+}
+
+#conect .sobre-mim{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#conect .header h1{
+    margin-bottom: 50px;
+}
+
+#all-conect a{
+    padding: 30px;
+   display: inline-block;
    text-align: center;
    justify-content: center;
 }
@@ -321,18 +364,7 @@ p {
  #all-conect .conect-img img{
      width: 100px;
  }
- .conect-title{
-    border-bottom: 1px solid black ;
-    font-size: 4rem;
-    font-weight: 500;
-    color: var(--gradient--);
-    margin-bottom: 10px;
-    margin-top: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    line-height: 90px; 
- }
+
 /*seção de contatos */
 
 
@@ -379,21 +411,20 @@ footer a:hover{
         display: block;
     }
     #menu{
-        text-align: left;
         display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right: 0px;
-        background: var(--menu--);
-        transition: .6s;
-        height: 0px;
+        background:#0b1c2685;
+        transition: 0.6s;
         z-index: 1000;
+        height: 0px;
         visibility: hidden;
         overflow-y: hidden;
     }
     #nav-bar.active #menu{
-        height: 200px;
+        height: calc(100vh - 40px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -405,13 +436,13 @@ footer a:hover{
     #btn-mobile{
         font-family: 'Poppins';
         display: flex;
-        padding: .5rem 1rem;
-        font-size: 2.0rem;
+        padding: 2.5rem 1rem;
+        font-size: 1.5rem;
         border: none;
         background: none;
         cursor: pointer;
         color: white;
-        gap: .5rem;
+        gap: 0.5rem;
     }
     #hamburger{
         border-top: 2px solid;
@@ -421,10 +452,10 @@ footer a:hover{
         content: '';
         display: block;
         width: 20px;
-        height: 2px;
+        height:2px;
         background: currentColor;
         margin-top: 5px;
-        transition: .3s;
+        transition: 0.3s;
         position: relative;
     }
     #nav-bar.active #hamburger{
