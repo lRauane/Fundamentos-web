@@ -178,8 +178,6 @@ p {
 #sobre-mim .header h1{
     margin-bottom: 50px;
 }
-
-
 #all-sobre {
     display: flex;
     align-items: center;
@@ -225,7 +223,7 @@ p {
 }
 #all-sobre .sobre-img {
     flex-basis: 50%;
-    height: 440px;
+    height: 577px;
     overflow: hidden;
     position: relative;
 }
@@ -321,7 +319,7 @@ p {
     font-size: 4.0rem;
     font-weight: 100;
     color: var(--gradient--);
-    margin-top: 4px;
+    margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -335,19 +333,10 @@ p {
 #conect .header h1{
     margin-bottom: 50px;
 }
-
-#conect .sobre-mim{
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-#conect .header h1{
-    margin-bottom: 50px;
-}
-
 #all-conect a{
-    padding: 30px;
+   border: 1px solid #010326;
+   margin: 10px;
+   padding: 30px;
    display: inline-block;
    text-align: center;
    justify-content: center;
