@@ -6,13 +6,16 @@
     --cor-destaque--:gold;
 }
 
+/* Declarações gerais */
 *{
     padding: 0; margin: 0;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 html{
+    font-family: 'poppins', 'Times New Roman', Times, serif;
     font-size: 10px;
-    font-family: 'Poppins', 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
 }
 a{
@@ -31,20 +34,9 @@ p {
     font-weight: 200;
     letter-spacing: 0.05rem;
 }
-.section-title {
-    border: 1px solid  gold;
-    padding: 10px;
-    border-radius: 0 30px 0 30px;
-    font-size: 4.0rem;
-    font-weight: 100;
-    color: var(--gradient--) ;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
+/* Declarações gerais */
 
+/*Menu*/
 #nav-bar{
     background-color:#010326;
     font-size: 1.4rem;
@@ -59,7 +51,7 @@ p {
    margin: 20px;
 }
 #nav-bar a{
-    color: var(--padrao--);
+    color: rgb(255, 255, 255);
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
@@ -86,9 +78,9 @@ p {
     width: 100%; display: flex;
     align-items: center; justify-content: center;
 }
+/*menu*/
 
-/* seção de apresentação */
-
+/* apresentação */
 #presentation{
     background: url(../imagens/vs.jpg) center center;
     background-size: cover;
@@ -155,8 +147,8 @@ p {
     background-color: black;
     opacity: 0.5;
     z-index: -1;
-    
 }
+/*apresentação*/
 
 /* seção sobre mim */
 #sobre-mim .sobre-mim{
@@ -239,11 +231,22 @@ p {
 #all-sobre .sobre-item:hover .sobre-img img{
     transform: scale(1.1);
 }
- 
 /* seção sobre mim */
 
 /* seção portifólio */
-
+.section-title {
+    border: 1px solid  gold;
+    padding: 10px;
+    border-radius: 0 30px 0 30px;
+    font-size: 4.0rem;
+    font-weight: 100;
+    color: var(--gradient--) ;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
 #portfolio .portfolio{
     flex-direction: column;
     max-width: 1200px;
@@ -311,6 +314,8 @@ p {
 #portfolio .project-item:hover .project-img img{
     transform: scale(1.1);
 }
+/*seção portifólio*/
+
 /* seção de contatos */
 .conect-title {
     border: 1px solid  gold;
@@ -398,7 +403,7 @@ footer a:hover{
     width: 100%;
     top: 70px;
     right: 0px;
-    background-image: linear-gradient(60deg, #01032671, #010c4056, #022859);
+    background-image: linear-gradient(60deg, #010326a8, #010c408a, #022859);
     transition: 0.6s;
     z-index: 1000;
     height: 0px;

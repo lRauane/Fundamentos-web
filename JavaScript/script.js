@@ -1,3 +1,4 @@
+/*menu*/
 const btnmobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event){
@@ -16,3 +17,4 @@ function toggleMenu(event){
 
 btnmobile.addEventListener('click', toggleMenu);
 btnmobile.addEventListener('touchstart', toggleMenu);
+/*menu */
