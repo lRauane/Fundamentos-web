@@ -1,4 +1,4 @@
-# 📍 Site Portfolio
+# 📍 Site Portifólio
 ![screenshot](https://user-images.githubusercontent.com/102835801/172029273-b72f6122-e6ee-482b-b121-ebdc1a13b871.png)
 
 # 📍 Bibliotecas utilizadas
