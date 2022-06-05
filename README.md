@@ -1,6 +1,6 @@
 
 # 📍 Site Portfólio
-![screenshot](https://user-images.githubusercontent.com/102835801/172029273-b72f6122-e6ee-482b-b121-ebdc1a13b871.png)
+![lateral](https://user-images.githubusercontent.com/102835801/172059563-a9e7b4de-2f58-4cd7-9e62-95240f89f40e.png)
 
 # 📍 Bibliotecas utilizadas
 - Google fonts (https://fonts.google.com/)
