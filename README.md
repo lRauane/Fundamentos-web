@@ -26,5 +26,6 @@
 
 # 📍 Como posso acessar esse projeto
 ### Voce pode acessa esse site pelo Qr code abaixo ou também pelo link:
-![frame (2)](https://user-images.githubusercontent.com/102835801/172030563-2b38dc36-cc5b-41e5-b6af-ec36ab4bf01b.png)
+![frame (3)](https://user-images.githubusercontent.com/102835801/172059625-28c7dc5f-79db-4e62-bbd1-e7ef6cbfdddc.png)
+
 - Hospedado: (https://portfolio-rauane.netlify.app/)
