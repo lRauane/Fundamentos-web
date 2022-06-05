@@ -13,7 +13,9 @@
 - JavaScript
 
 # 📍 Explicação do projeto
-
+<p> Desafio de site feito pela TechAcademy para ser desenvolvido com toda base que todos os alunos já aprenderam
+ no curso. É importante falar que toda estrutura de código foi feita em ao vivo pelos professores e como o desafio era aprimorar nosso conhecimento ficou o desafio de refatorarmos e montamos o site do nosso jeito. Agradeço imensamente todos os professores que os ensinaram, foi uma onda de conhecimento!</p>
+ 
 # 📍 Redes sociais 
  ## Me acompanhe também pelas redes sociais
  - Linkedin (https://www.linkedin.com/in/rauane-lima-129b14237/)
