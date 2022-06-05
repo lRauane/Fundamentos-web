@@ -1,4 +1,5 @@
-# 📍 Site Portifólio
+
+# 📍 Site Portfólio
 ![screenshot](https://user-images.githubusercontent.com/102835801/172029273-b72f6122-e6ee-482b-b121-ebdc1a13b871.png)
 
 # 📍 Bibliotecas utilizadas
@@ -25,4 +26,5 @@
 
 # 📍 Como posso acessar esse projeto
 ### Voce pode acessa esse site pelo Qr code abaixo ou também pelo link:
-
+![frame (2)](https://user-images.githubusercontent.com/102835801/172030563-2b38dc36-cc5b-41e5-b6af-ec36ab4bf01b.png)
+- Hospedado: https://portifolio-rauane.netlify.app/
