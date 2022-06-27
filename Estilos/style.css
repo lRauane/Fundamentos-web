@@ -12,6 +12,10 @@
     box-sizing: border-box;
 
 }
+body{
+    display: grid;
+    height: 100vh;
+}
 html{
     font-family: 'poppins', 'Times New Roman', Times, serif;
     font-size: 10px;
@@ -147,6 +151,85 @@ p {
     opacity: 0.5;
     z-index: -1;
 }
+/*conect*/
+.wrapper {
+    position: relative;
+    bottom: 200px;
+    right: 140px;
+}
+
+.wrapper :is(.btn, .link) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    color: #151515;
+    border-radius: 50%;
+}
+
+.btn {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: outline .25s;
+}
+
+.active .btn,
+.btn:hover {
+    outline: 5px solid gold;
+    outline-offset: -4px;
+}
+
+.item {
+    position: absolute;
+    list-style: none;
+    transition: transform .5s;
+    transition-delay: var(--d);
+}
+
+.wrapper.active .item:nth-child(1) {
+    transform: translateX(-65px);
+}
+
+.wrapper.active .item:nth-child(2) {
+    transform: translateY(-65px);
+}
+
+.wrapper.active .item:nth-child(3) {
+    transform: translateX(65px);
+}
+
+.wrapper.active .item:nth-child(4) {
+    transform: translatey(65px);
+}
+
+.link:hover {
+    color: #fff;
+    transition: background-color .5s;
+}
+
+.ig:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+}
+
+.tw:hover {
+    background-color: #1DA1F2;
+}
+
+.sc:hover {
+    background-color: rgba(12, 12, 12, 0.322);
+    color: inherit;
+}
+.lk:hover{
+    background-color: #0a66c2;
+}
+
 /*apresentação*/
 
 /* seção sobre mim */
@@ -315,47 +398,10 @@ p {
 }
 /*seção portifólio*/
 
-/* seção de contatos */
-.conect-title {
-    border: 1px solid  gold;
-    padding: 20px;
-    border-radius: 0 30px 0 30px;
-    font-size: 4.0rem;
-    font-weight: 100;
-    color: var(--gradient--);
-    margin-top: 0px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
-#conect .conect-me{
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-#conect .header h1{
-    margin-bottom: 50px;
-}
-#all-conect a{
-   border: 1px solid #010326;
-   margin: 10px;
-   padding: 30px;
-   display: inline-block;
-   text-align: center;
-   justify-content: center;
-}
-#all-conect .conect-img a:hover{
-    cursor: pointer;
-}
- #all-conect .conect-img img{
-     width: 100px;
- }
-/*seção de contatos */
-
 /*rodapé*/
 footer{
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 0px;
     text-align: center;
     background-image: linear-gradient(60deg, #010326, #010B40, #022859);
     color: var(--padrao--);
