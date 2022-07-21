@@ -126,7 +126,7 @@ p {
     font-size: 2.0rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: .5s ease;
     transition-property: background-color, color;
 }
@@ -435,7 +435,7 @@ footer a:hover{
     top: -7px;
 }
 .wrapper img{
-        width: 150px;
+        width: 200px;
     }
     #presentation h1{
         display: block;
@@ -449,11 +449,12 @@ footer a:hover{
     }
     #presentation .cta{
         display: flex; padding: 10px 30px;
-        color: var(--cor-destaque--); background-color: transparent;
+        color: black; background-color: gold;
         border: 2px solid var(--cor-destaque--);
         font-size: 2.0rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
+        margin-bottom: 20px;
         margin-top: 20px;
         transition: .5s ease;
         transition-property: background-color, color;
