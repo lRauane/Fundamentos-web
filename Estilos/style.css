@@ -441,7 +441,7 @@ footer a:hover{
         display: block;
         width: fit-content;
         font-size: 4.0rem;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         position: relative;
         color: transparent;
         animation: text_reveal .5s ease forwards;
