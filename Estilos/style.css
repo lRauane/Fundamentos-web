@@ -437,16 +437,6 @@ footer a:hover{
 .wrapper img{
         width: 200px;
     }
-    #presentation h1{
-        display: block;
-        width: fit-content;
-        font-size: 4.0rem;
-        margin-bottom: 0px;
-        position: relative;
-        color: transparent;
-        animation: text_reveal .5s ease forwards;
-        animation-delay: 1.5s;
-    }
     #presentation .cta{
         display: flex; padding: 10px 30px;
         color: black; background-color: gold;
@@ -496,3 +486,28 @@ footer a:hover{
     flex-direction: row-reverse;
 }
 }
+ @media (max-width:450px){
+    #presentation .cta{
+        padding: 10px;
+        margin-left: 40px;
+        width: 190px;
+    }
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper img{
+        width: 100%;
+    }
+    .wrapper{
+        top: 110px;
+    }
+    #presentation h1{
+        display: block;
+        width: fit-content;
+        font-size: 4.5rem;
+        margin-left: 40px;
+        color: transparent;
+    }
+    }
