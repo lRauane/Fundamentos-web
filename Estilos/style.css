@@ -10,16 +10,18 @@
 *{
     padding: 0; margin: 0;
     box-sizing: border-box;
-
+   
 }
 body{
     display: grid;
     height: 100vh;
+    
 }
 html{
     font-family: 'poppins', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
+   
 }
 a{
     color: var(--cor-destaque--);
@@ -29,7 +31,7 @@ h3{
     text-align: center;
     color: red; font-size: 1.5rem;
     border: 1px solid red;
-    padding: 30px; margin: 30px;
+    padding: 30px; margin: 50px;
 }
 img{
     height: 100%;
@@ -107,6 +109,7 @@ p {
 }
 
 #presentation h1{
+    overflow: hidden;
     display: block;
     width: fit-content;
     font-size: 5.5rem;
@@ -392,8 +395,8 @@ footer a:hover{
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
-    right: 0px;
+    top: 55px;
+    right: 0px; left: 0;
     background-image: linear-gradient(60deg, #010326a8, #010c408a, #022859);
     transition: 0.6s;
     z-index: 1000;
@@ -450,7 +453,8 @@ footer a:hover{
         width: 200px;
     }
     #presentation .cta{
-        display: flex; padding: 10px 30px;
+        display: flex; 
+        padding: 10px 30px;
         color: black; background-color: gold;
         border: 2px solid var(--cor-destaque--);
         font-size: 2.0rem;
@@ -507,26 +511,34 @@ footer a:hover{
     #presentation .cta {
         padding: 10px;
         width: 190px;
-        margin-left: 40px;
+        margin-left: 0px;
+        
     }
     
     .wrapper {
         position: absolute;
         display: flex;
         flex-direction: column;
-        right: 40px; bottom: 250px;
+     right: 70px; bottom: 250px;
     }
-
-   
     #presentation h1{
         display: flex;
-        width: 350px;
+        justify-content: left;
+        width:300px;
         max-width: 800px;
         font-size: 4.5rem;
-        margin-left: 40px;
+        margin-right: 70px;  
+
+    }
+}
+    @media (max-width:375px){
+        .wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            right: 40px; bottom: 110px;
+            left: 150px;
+        }
+       
     
-    }
-    #presentation{
-        display: block;
-    }
     }
