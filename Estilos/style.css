@@ -242,6 +242,7 @@ p {
 }
 #all-sobre .sobre-img img{
     transition: 0.5s ease transform;
+    width: 300px;
 }
 #all-sobre .sobre-item:hover .sobre-img img{
     transform: scale(1.1);
@@ -438,24 +439,20 @@ footer a:hover{
         width: 170px;
     }
     .wrapper{
-        position: fixed;
+        position: relative;
+        top: 100px;
         right: 40px;
-        top: 50px;
     }
     #presentation h1{
         font-size: 4.5rem;
+        margin-left: 40px;
+        
     }
     #presentation .cta{
-        display: flex; padding: 10px 30px;
-        color: black; background-color: gold;
-        border: 2px solid var(--cor-destaque--);
-        font-size: 2.0rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
+        display: flex; padding: 10px 20px;
         margin-bottom: 20px;
         margin-top: 20px;
-        transition: .5s ease;
-        transition-property: background-color, color;
+        margin-left: 40px;
     }
 }
 
