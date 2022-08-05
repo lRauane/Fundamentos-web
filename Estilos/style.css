@@ -242,7 +242,6 @@ p {
 }
 #all-sobre .sobre-img img{
     transition: 0.5s ease transform;
-    width: 300px;
 }
 #all-sobre .sobre-item:hover .sobre-img img{
     transform: scale(1.1);
@@ -444,7 +443,7 @@ footer a:hover{
         right: 40px;
     }
     #presentation h1{
-        font-size: 4.5rem;
+        font-size: 4.0rem;
         margin-left: 40px;
         
     }
