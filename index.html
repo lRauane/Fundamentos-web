@@ -3,15 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./Estilos/style.css">
-<link rel="icon" href="imagens/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
-<title>Portfólio | Rauane Lima</title>
-</head>
 
+<!-- SEO basic -->
+<title>Portfólio | Rauane Lima</title>
+<meta name="description" content="Portfólio de projetos front-end">
+
+<meta name="author" content="Rauane Lima jesus">
+
+<!--Estilos externos-->
+<link rel="stylesheet" href="./Estilos/style.css">
+<link rel="stylesheet" href="./Estilos/media.css">
+
+<!--Favicon-->
+<link rel="icon" href="imagens/favicon-16x16.png">
+
+</head>
 <body>
 
-<!--começo do menu-->
+<!--menu-->
 <nav id="nav-bar">
   <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
   <span id="hamburger"></span>
@@ -24,9 +33,8 @@
   <a href="#conect"><li>Conecte-se</li></a>
  </ul>
 </nav>
-<!--Fim do menu-->
 
-<!-- começo da Apresentação-->
+<!--Apresentação-->
 <header>
 
 <section id="presentation">
@@ -35,11 +43,12 @@
   <h1>Olá,<span></span></h1>
   <h1>meu nome é<span></span></h1>
   <h1>Rauane Lima<span></span></h1>
+
   <a href="./imagens/curriculo (2).png" type="button" class="cta" download="curriculo">Currículo</a>
   <a href="https://github.com/lRauane" type="button" class="cta">
-    Github</a>
-</div>
+  Github</a>
 
+</div>
 
 <div class="wrapper">
    <img src="./imagens/eu.png" alt="">
@@ -47,16 +56,16 @@
 
 </section>
 </header>
-<!--Fim da apresentação-->
+
 
 <main>
 <!--Sobre mim-->
-<section id="sobre-mim">
- <div class="sobre-mim container-sobre">
- <div class="sobre-mim header">
-  <h1 class="section-title"><span>Sobre mim</span></h1>
- </div>
-
+<section id="portfolio">
+  <div class="portfolio container">
+  <div class="portfolio header">
+   <h1 class="section-title"><span>Sobre mim</span></h1>
+  </div>
+ <section class="all-projects">
 <section id="all-sobre">
  <div class="sobre-item">
  <div class="sobre-info">
@@ -68,7 +77,6 @@
     <img src="imagens/quem-sou3.jpg"  alt="Foto de apresentação">
   </picture>
 </section>
-<!--Sobre mim-->
 
 
 <!--Portifólio-->
@@ -78,7 +86,6 @@
   <h1 class="section-title"><span>Projetos</span></h1>
  </div>
 <section class="all-projects">
-<!--Projeto 1-->
 
   <section class="project-item">
     <div class="project-info">
@@ -94,9 +101,8 @@
       <img src="imagens/p-agina de tributo.png" alt="img">
      </picture>
    </section>
-<!--projeto 1-->
-    
-<!--Projeto 2-->
+
+
 <section class="project-item">
  <div class="project-info">
   <a href="https://lrauane.github.io/Awax/" target="_blank" rel="external">
@@ -108,9 +114,7 @@
    <img src="imagens/awax (2).png" alt="img">
   </picture>
 </section>
-<!--Projeto 2-->
-    
-<!--Projeto 3-->
+
 <section class="project-item">
  <div class="project-info">
   <a href="https://lrauane.github.io/Conecta-empresas/" target="_blank" rel="external">
@@ -123,7 +127,6 @@
   </picture>
 </section>
 
-<!--Projeto 3-->
 <section class="project-item">
   <div class="project-info">
    <a href="https://lojasapatos.netlify.app/index.html" target="_blank" rel="external">
@@ -137,8 +140,55 @@
  </section>
 
 
+ <section class="project-item">
+  <div class="project-info">
+   <a href="https://lrauane.github.io/Starbucks/" target="_blank" rel="external">
+     <h1>Starbucks</h1>
+   </a>
+   <p>Projeto com flexbox e grid, exercicios proposto pela b7Web para treinar o bom css e html.</p>
+  </div>
+   <picture class="project-img">
+   <img src="/imagens/starbucks.png" alt="img">
+   </picture>
+ </section>
 
-<!--Projeto 4-->
+ <section class="project-item">
+  <div class="project-info">
+   <a href="https://lrauane.github.io/finans/" target="_blank" rel="external">
+    <h1>Finans</h1>
+   </a>
+   <p>Projeto com Bootstrap4, exercicios proposto pela Udemy para treinar bons costumes com classes no Bootstrap.</p>
+  </div>
+   <picture class="project-img">
+   <img src="/imagens/finans.png" alt="img">
+   </picture>
+ </section>
+
+ <section class="project-item">
+  <div class="project-info">
+   <a href="https://sirbarber.netlify.app/" target="_blank" rel="external">
+    <h1>Sirbarber</h1>
+   </a>
+   <p>Informações sobre a barbearia SirBarber, um site ficticio criado nas aulas do Codar.me com um protótipo no FIGMA.</p>
+  </div>
+   <picture class="project-img">
+   <img src="/imagens/SirBarber.png" alt="img">
+   </picture>
+ </section>
+
+ <section class="project-item">
+  <div class="project-info">
+   <a href="https://sirbarber.netlify.app/" target="_blank" rel="external">
+    <h1>MiaBeauty</h1>
+   </a>
+   <p>Informações sobre o salãõ de beleza MiaBeauty, com um protótipo no FIGMA.</p>
+  </div>
+   <picture class="project-img">
+   <img src="/imagens/MiaBeauty.png" alt="img">
+   </picture>
+ </section>
+
+
 <section class="project-item">
  <div class="project-info">
   <a href="https://lrauane.github.io/Site-educacional/" target="_blank" rel="external">
@@ -151,9 +201,6 @@
   </picture>
 </section>
 
-<!--Projeto 4-->
-    
-<!--Projeto 5-->
 <section class="project-item">
  <div class="project-info">
   <a href="https://lrauane.github.io/TecBlog/" target="_blank" rel="external">
@@ -165,9 +212,7 @@
   <img src="./imagens/tecBlog.png" alt="img">
   </picture>
 </section>
-<!--Projeto 5-->
 
-<!--Projeto 6-->
 <section class="project-item">
   <div class="project-info">
    <a href="https://lrauane.github.io/ProjetoUNES/" target="_blank" rel="external">
@@ -178,11 +223,8 @@
      <picture class="project-img">
      <img src="./imagens/UNES.png" alt="img">
      </picture>
-
  </section>
- <!--Porjeto 6-->
 
-<!--Projeto 7-->
 <section class="project-item">
  <div class="project-info">
   <a href="https://lrauane.github.io/Projeto Poesia/" target="_blank" rel="external">
@@ -202,7 +244,7 @@
    </a>
    <p>Projeto feito para aprender os conceitos de posicionamento do flexbox. Foi feito em parceria com a DIO no direcionamento do Curso de desenvolvimento das habilidades ali adquiridas, foi um projeto muito importante que ajudou na minha evolução com as caixas no CSS.</p>
   </div>
-    <picture class="project-img">
+  <picture class="project-img">
     <img src="imagens/flexturismos.png" alt="img">
    </picture>
  </section>
@@ -238,7 +280,7 @@
 
 
 </main>
- <!--fim do Portifólio-->
+
 
 <!--Rodapé-->
 <footer id="footer">
@@ -247,10 +289,12 @@
   <p>Portfolio por: <a href="https://github.com/lRauane" target="_blank" rel="external">Rauane Lima</a></p>
  </div>
 </footer>
-<!--Rodapé-->
 
+
+
+
+<script src='https://use.fontawesome.com/7dd91a0fb4.js'></script> 
 <!--JavaScript-->
 <script src="javaScript/script.js"></script>
-<!--JavaScript-->
 </body>
 </html>
