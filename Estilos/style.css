@@ -443,6 +443,15 @@ p {
 }
 
 /*rodapé*/
+.redes {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.redes i{
+    margin: 10px;
+    padding: 20px;
+}
 footer{
     padding: 40px;
     margin-bottom: 0px;
