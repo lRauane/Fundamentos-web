@@ -12,8 +12,8 @@
   <meta name="author" content="Rauane Lima jesus">
 
   <!--Estilos externos-->
-  <link rel="stylesheet" href="./Estilos/style.css">
-  <link rel="stylesheet" href="./Estilos/media.css">
+  <link rel="stylesheet" href="./src/Styles/style.css">
+  <link rel="stylesheet" href="./src/Styles/media.css">
 
   <!--Favicon-->
   <link rel="icon" href="imagens/favicon-16x16.png">
@@ -22,83 +22,119 @@
 
 <body>
 
-  <!--menu-->
-  <nav id="nav-bar">
-    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-      <span id="hamburger"></span>
-    </button>
-
-    <ul id="menu" role="menu">
-      <a href="#">
-        <li>Início</li>
-      </a>
-      <a href="#sobre-mim">
-        <li>Sobre mim</li>
-      </a>
-      <a href="#portfolio">
-        <li>Projetos</li>
-      </a>
-      <a href="#conect">
-        <li>Conecte-se</li>
-      </a>
-    </ul>
-  </nav>
-
-  <!--Apresentação-->
   <header>
+    <nav id="nav-bar">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
 
-    <section id="presentation">
-      <div class="presentation container">
-        <div>
-          <h1>Olá,<span></span></h1>
-          <h1>meu nome é<span></span></h1>
-          <h1>Rauane Lima<span></span></h1>
+      <ul id="menu" role="menu">
+        <a href="#">
+          <li>Início</li>
+        </a>
+        <a href="#sobre-mim">
+          <li> Sobre mim </li>
+        </a>
+        <a href="#sobre-mim">
+          <li>Formação</li>
+        </a>
+        <a href="#portfolio">
+          <li>Projetos</li>
+        </a>
+        <a href="#conect">
+          <li>Contato</li>
+        </a>
+      </ul>
+    </nav>
 
-          <a href="./imagens/Dev Front-end  - - Rauane Lima Jesus_page-0001.jpg" type="button" class="cta"
-            download="curriculo">Currículo</a>
-          <a href="https://github.com/lRauane" type="button" class="cta">
-            Github</a>
-
-        </div>
-        <div class="wrapper">
-          <img src="./imagens/eu.png" alt="">
-        </div>
-
-    </section>
   </header>
 
+  <section>
+    <div class="presentation">
+      <div>
+        <h1>Olá,<span></span></h1>
+        <h1>meu nome é<span></span></h1>
+        <h1>Rauane Lima<span></span></h1>
+
+        <a href="https://github.com/lRauane" type="button" class="cta">
+          Github</a>
+
+      </div>
+      <div class="wrapper">
+        <img src="src/img/Avatar.webp" alt="">
+      </div>
+    </div>
+  </section>
 
   <main>
+
     <!--Sobre mim-->
-    <section id="portfolio">
-      <div class="portfolio container">
-        <div class="portfolio header">
-          <h1 class="section-title"><span>Sobre mim</span></h1>
+    <section class="about">
+      <div class="title-container">
+        <h2 class="title">Sobre mim</h2>
+      </div>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="https://avatars.githubusercontent.com/u/102835801?v=4" alt="" >
         </div>
-        <section class="all-projects">
-          <section id="all-sobre">
-            <div class="sobre-item">
-              <div class="sobre-info">
-                <h2>Minha história na programação</h2>
-                <p>Entrei na área de tecnologia há exatamente 6 meses, durante essa minha jornada aprendi com bootcamps,
-                  projetos pessoais e também com cursos que me trouxeram tal Experiência para algoritmos, lógica de
-                  programação e pensamento computacional, HTML5, CSS3, JavaScript, Bootstrap, Git e Github. Toda minha
-                  experiência vem de projetos que ao longo desses meses são divididos entre meu aprendizado e objetivos
-                  que eu mesmo defini. Já participei de um Hackathon onde ficou da minha responsabilidade organizar,
-                  formular, criar e discutir em grupo sobre o projeto que iriamos fazer, já dei algumas aulas sobre git
-                  e github, ensinei HTML, um pouco também da semântica dele para iniciantes que assim como eu,
-                  precisaram de ajuda no início.
-                </p>
-              </div>
-              <picture class="sobre-img">
-                <img src="imagens/quem-sou3.jpg" alt="Foto de apresentação">
-              </picture>
-          </section>
-        </section>
+        <div class="about-infos">
+          <p>Sou estudante de análise e desenvolvimento de sistemas. Atualmente tenho trabalhado voluntariamente na empresa JDG como desenvolvedora front-end e auxiliando no design UX/UI para adquirir experiência na área, já fiz algumas soluções como freelancer e venho criando projetos no dia a dia para auxiliar as pessoas ao meu redor.</p>
+
+          <div class="about-doing">
+            <ul>
+              <li>HTML</li>
+              <li>CSS/SCSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>TailwindCSS</li>
+              <li>UX/UI design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Projetos -->
+    <section class="projects">
+      <div class="title-container">
+        <h2 class="title">Projetos</h2>
+      </div>
+      <div class="repo-container" id="repo-container">
+        
+      </div>
+      <a class="more" href="https://github.com/lRauane">Ver mais...</a>
+    </section>
 
-    <!--Portifólio-->
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+  <main>
+
+    
+
+
+
     <section id="portfolio">
       <div class="portfolio container">
         <div class="portfolio header">
@@ -355,7 +391,6 @@
   </main>
 
 
-  <!--Rodapé-->
   <footer id="footer">
     <div class="redes">
       <a href="https://www.linkedin.com/in/rauane-lima-129b14237/"><i class="fa fa-4x fa-linkedin"></i></a>
@@ -368,14 +403,14 @@
       <p>Feito com ❤️ por <a href="https://github.com/lRauane">Rauane Lima</a></p>
       <p>&copy; <time>2022</time></p>
     </div>
-  </footer>
+  </footer> -->
 
 
 
 
   <script src='https://use.fontawesome.com/7dd91a0fb4.js'></script>
   <!--JavaScript-->
-  <script src="javaScript/script.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>
