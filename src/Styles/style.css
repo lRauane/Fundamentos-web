@@ -69,13 +69,16 @@ html {
   scroll-behavior: smooth;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 a {
   color: var(--cor-destaque--);
   text-decoration: none;
 }
-.title {
-  color: var(--text-gradient-yellow);
-}
+
 img {
   height: 100%;
   width: 100%;
@@ -103,9 +106,13 @@ p {
 
 /*Menu*/
 
-header {
-  padding: 1rem;
+#nav-bar {
   font-size: 1.5rem;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
   background-color: var(--eerie-black-2);
 }
 
@@ -137,8 +144,8 @@ header {
   display: flex;
   align-items: start;
   justify-content: space-evenly;
-  margin-bottom: 15rem;
-  margin-top: 15rem;
+  margin-bottom: 30rem;
+  margin-top: 30rem;
 }
 .wrapper {
   display: flex;
@@ -265,7 +272,6 @@ header {
   font-size: 1.5rem;
 }
 
-
 /*seção portifólio*/
 .repo-card {
   border: 1px solid #525050;
@@ -279,18 +285,18 @@ header {
   flex-direction: column;
   gap: 1rem;
 }
-.repo-container{
+.repo-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
   width: 110rem;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.projects .more{
+.projects .more {
   font-size: 1.5rem;
   color: var(--eerie-black-1);
   margin-top: 5rem;
@@ -320,30 +326,78 @@ header {
   border-radius: 8px;
 }
 
-/*rodapé*/
-.redes {
+/* Experiencias */
+.timeline {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 8rem;
 }
-.redes i {
-  margin: 10px;
-  padding: 20px;
+
+.timeline-container {
+  max-width: 100%;
+  width: 50rem;
+  margin-bottom: 5rem;
 }
-footer {
-  padding: 40px;
-  margin-bottom: 0px;
-  text-align: center;
-  background-image: linear-gradient(60deg, #010326, #010b40, #022859);
-  color: var(--padrao--);
+
+.timeline-item {
+  position: relative;
+  background: var(--bg-gradient-jet);
+  border: 2px solid #393a3a;
+  padding: 2rem;
 }
-footer a {
-  color: var(--cor-destaque--);
+
+.timeline-item:not(:last-child) {
+  margin-bottom: 3rem;
 }
-footer a:hover {
-  color: rgb(95, 83, 14);
+
+.timeline-item-title {
+  color: var(--light-gray);
+  line-height: 1.3;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-/*rodapé*/
+
+.timeline-list span {
+  color: var(--orange-yellow-crayola);
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 70px);
+  background: var(--jet);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 10px;
+  width: 10px;
+  background: var(--text-gradient-yellow);
+  border-radius: 10%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+.timeline-text {
+  color: var(--light-gray-70);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.timeline-container .title {
+  text-align: start;
+}
+
 
 /* keyframes */
 @keyframes text_reveal {

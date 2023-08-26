@@ -32,16 +32,16 @@
         <a href="#">
           <li>Início</li>
         </a>
-        <a href="#sobre-mim">
+        <a href="#about">
           <li> Sobre mim </li>
         </a>
-        <a href="#sobre-mim">
+        <a href="#experience">
           <li>Formação</li>
         </a>
-        <a href="#portfolio">
+        <a href="#projects">
           <li>Projetos</li>
         </a>
-        <a href="#conect">
+        <a href="#contact">
           <li>Contato</li>
         </a>
       </ul>
@@ -58,27 +58,30 @@
 
         <a href="https://github.com/lRauane" type="button" class="cta">
           Github</a>
-
       </div>
       <div class="wrapper">
         <img src="src/img/Avatar.webp" alt="">
       </div>
     </div>
+
   </section>
 
   <main>
 
     <!--Sobre mim-->
-    <section class="about">
+    <section class="about" id="about">
       <div class="title-container">
         <h2 class="title">Sobre mim</h2>
       </div>
       <div class="about-container">
         <div class="about-img">
-          <img src="https://avatars.githubusercontent.com/u/102835801?v=4" alt="" >
+          <img src="https://avatars.githubusercontent.com/u/102835801?v=4" alt="">
         </div>
         <div class="about-infos">
-          <p>Sou estudante de análise e desenvolvimento de sistemas. Atualmente tenho trabalhado voluntariamente na empresa JDG como desenvolvedora front-end e auxiliando no design UX/UI para adquirir experiência na área, já fiz algumas soluções como freelancer e venho criando projetos no dia a dia para auxiliar as pessoas ao meu redor.</p>
+          <p>Sou estudante de análise e desenvolvimento de sistemas. Atualmente tenho trabalhado voluntariamente na
+            empresa JDG como desenvolvedora front-end e auxiliando no design UX/UI para adquirir experiência na área, já
+            fiz algumas soluções como freelancer e venho criando projetos no dia a dia para auxiliar as pessoas ao meu
+            redor.</p>
 
           <div class="about-doing">
             <ul>
@@ -95,13 +98,70 @@
       </div>
     </section>
 
+    <!-- Formação -->
+    <section class="timeline" id="experience">
+      <div class="timeline-container">
+        <div class="title-container">
+          <h2 class="title">Formação</h2>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Professional Certificate Meta Front-End Developer</h4>
+            <span>2022 — momento</span>
+            <p class="timeline-text">
+              O curso "Certificado Profissional Meta Front-End Developer" é um programa de treinamento focado em
+              desenvolvimento front-end, abrangendo habilidades essenciais como HTML, CSS, design responsivo e
+              JavaScript. Os participantes aprendem a criar layouts atraentes, otimizar o desempenho da página e
+              utilizar ferramentas de desenvolvimento. Além disso, eles são apresentados a estruturas e bibliotecas
+              populares, obtendo uma compreensão básica da integração de back-end e dos padrões de acessibilidade. Ao
+              concluir o curso, os participantes estarão preparados para criar interfaces web de alta qualidade,
+              tornando-se profissionais valorizados no mercado de trabalho.
+            </p>
+
+
+          </li>
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">UNINTER - Análise e desenvolvimento de sistemas</h4>
+            <span>2022 — 2025</span>
+            <p class="timeline-text"></p>
+          </li>
+
+        </ol>
+      </div>
+      <div class="timeline-container">
+        <div class="title-container">
+          <h2 class="title">Experiência</h2>
+        </div>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Desenvolvedora front-end - Juniors Developers Group</h4>
+            <span>2023 — momento</span>
+            <p class="timeline-text">
+              Faço parte da equipe de Front-end da empresa, onde trabalhamos em projetos voluntários para ampliar nosso
+              conhecimento e experiência.
+              <br>
+              Tecnologias utilizadas:
+              - React.js/Next.js
+              - Tailwind, Styled components
+              - Typescript
+              - Jest e React Testing Library
+            </p>
+          </li>
+        </ol>
+      </div>
+
+    </section>
+
     <!-- Projetos -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="title-container">
         <h2 class="title">Projetos</h2>
       </div>
       <div class="repo-container" id="repo-container">
-        
+
       </div>
       <a class="more" href="https://github.com/lRauane">Ver mais...</a>
     </section>
@@ -129,267 +189,6 @@
 
 
   <!-- 
-  <main>
-
-    
-
-
-
-    <section id="portfolio">
-      <div class="portfolio container">
-        <div class="portfolio header">
-          <h1 class="section-title"><span>Projetos</span></h1>
-        </div>
-        <section class="all-projects">
-
-          <section class="project-item">
-            <div class="project-info">
-              <h1><a href="https://tribute-stephenhawking.netlify.app/" target="_blank" rel="external">Tribute
-                  Page - Stephen Hawking
-                </a></h1>
-              <br>
-
-              <p>Estava vendo vídeos sobre o Stephen (sou uma grande fã desse cara e do que ele fez pela ciência)
-                e surgiu uma ideia, por que não fazer uma página de tributos sobre a vida e os grandes feitos do
-                Hawking, contando um pouco dessa historia, desse cara que admiro tanto.</p>
-            </div>
-            <picture class="project-img">
-              <img src="imagens/p-agina de tributo.png" alt="Tribute
-              Page - Stephen Hawking">
-            </picture>
-          </section>
-
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://rocketbloog.netlify.app/" target="_blank" rel="external">
-                <h1>RocketBlog</h1>
-              </a>
-              <p>Construi Aplicação de Blog com protótipo da Rocketseat.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/RocketBolg.png" alt="RocketBolg">
-            </picture>
-          </section>
-
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Awax/" target="_blank" rel="external">
-                <h1>AWAX</h1>
-              </a>
-              <p>Uma landing page desenvolvida com o layout disponibilizado durante o curso de html e css da
-                b7web. Pude praticar posicionamento utilizando na maior parte o display: flex no projeto.</p>
-            </div>
-            <picture class="project-img">
-              <img src="imagens/awax (2).png" alt="awax">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://pagina-receitas.netlify.app/" target="_blank" rel="external">
-                <h1>Página simples de receita</h1>
-              </a>
-              <p>Uma página feita para treinar meus conceitos de HTML5 e CSS3, juntando duas coisas que mais amo na
-                vida: código e Bownie.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/pagina-receitas.png" alt="página de receitas">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://clima-agoraa.netlify.app/" target="_blank" rel="external">
-                <h1>Clima Agora!</h1>
-              </a>
-              <p>Construi Aplicação de Clima com OpenWeather API, um Projeto de JavaScript com API para trazer dados
-                climáticos de cidades. Um projeto fantástico sendo guiado pelo professor Matheus Battisti, aprendi
-                bastante coisa sobre integrações e manipulações.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/Clima-agora.png" alt="Clima agora">
-            </picture>
-          </section>
-
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://mundo-invertido.netlify.app/" target="_blank" rel="external">
-                <h1>Mundo Invertido</h1>
-              </a>
-              <p>semana Front-End - Mundo Invertido da Digital Innovation One Inc. sobre como criar um tema com CSS.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/mundoInvertido.png" alt="mundo Invertido">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lojasapatos.netlify.app/index.html" target="_blank" rel="external">
-                <h1>Loja de sapatos</h1>
-              </a>
-              <p>Loja fictícia de tênis para portfólio, esse site foi totalmente feita para estudos e sem nenhuma
-                intuição de vendas.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/loja-de-sapatos.avif" alt="loja de sapatos">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Starbucks/" target="_blank" rel="external">
-                <h1>Starbucks</h1>
-              </a>
-              <p>Projeto com flexbox e grid, exercicios proposto pela b7Web para treinar o bom css e html.</p>
-            </div>
-            <picture class="project-img">
-              <img src="/imagens/starbucks.avif" alt="starbucks">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/finans/" target="_blank" rel="external">
-                <h1>Finans</h1>
-              </a>
-              <p>Projeto com Bootstrap4, exercicios proposto pela Udemy para treinar bons costumes com classes no
-                Bootstrap.</p>
-            </div>
-            <picture class="project-img">
-              <img src="/imagens/finans.avif" alt="finans">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://sirbarber.netlify.app/" target="_blank" rel="external">
-                <h1>Sirbarber</h1>
-              </a>
-              <p>Informações sobre a barbearia SirBarber, um site ficticio criado nas aulas do Codar.me com um
-                protótipo no FIGMA.</p>
-            </div>
-            <picture class="project-img">
-              <img src="/imagens/SirBarber.png" alt="SirBarber">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/salao_beleza/" target="_blank" rel="external">
-                <h1>MiaBeauty</h1>
-              </a>
-              <p>Informações sobre o salãõ de beleza MiaBeauty, com um protótipo no FIGMA.</p>
-            </div>
-            <picture class="project-img">
-              <img src="/imagens/MiaBeauty.png" alt="MiaBeauty">
-            </picture>
-          </section>
-
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Veterinario/" target="_blank" rel="external">
-                <h1>Veterinário</h1>
-              </a>
-              <p>página estática de uma veterinário com HTML5 e CSS3 contendo informações sobre tal empresa.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/Veterinario.avif" alt="Veterinário">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/TecBlog/" target="_blank" rel="external">
-                <h1>TecBlog</h1>
-              </a>
-              <p>Projeto realizado em um curso feito na plataforma Udemy, onde foi proposto a criação de um
-                simples site de um blog com o nome de "TecBlog" utilizando HTML e CSS.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/tecBlog.avif" alt="TecBlog">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/ProjetoUNES/" target="_blank" rel="external">
-                <h1>Universidade UNES</h1>
-              </a>
-              <p>Site totalmente feito no curso da UDEMY com ajustes, estilização feitos por mim. Com o objetivo
-                de mostrar informações de uma universidade cujo a didática voltada a forma de ensinamento da UNES.
-              </p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/UNES.avif" alt="UNES">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Projeto Poesia/" target="_blank" rel="external">
-                <h1>Projeto poesia</h1>
-              </a>
-              <p>Esse projeto foi feito com a conclusão de ser retirado o máximo de conhecimento sobre a
-                propiedade de imagens de fundo. O projeto inicial era um cordel, como eu já criava poesisa resolvi
-                modificar para um projeto meu.</p>
-            </div>
-            <picture class="project-img">
-              <img src="./imagens/Projeto poesia.png" alt="Projeto poesia">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://flexturismos.netlify.app/" target="_blank" rel="external">
-                <h1>Flex turismo</h1>
-              </a>
-              <p>Projeto feito para aprender os conceitos de posicionamento do flexbox. Foi feito em parceria com
-                a DIO no direcionamento do Curso de desenvolvimento das habilidades ali adquiridas, foi um projeto
-                muito importante que ajudou na minha evolução com as caixas no CSS.</p>
-            </div>
-            <picture class="project-img">
-              <img src="imagens/flexturismos.avif" alt="flexturismos">
-            </picture>
-          </section>
-
-          <section class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Memory-game/" target="_blank" rel="external">
-                <h1>Memory Game</h1>
-              </a>
-              <p>Jogo da memória com tema do Rick and Morty feito com HTML, CSS e JavaScript.</p>
-            </div>
-            <picture class="project-img">
-              <img src="imagens/MemoryGame.png" alt="MemoryGame">
-            </picture>
-          </section>
-
-          <div class="project-item">
-            <div class="project-info">
-              <a href="https://lrauane.github.io/Validando-forms-com-HTML-E-JavaScript/" target="_blank" rel="external">
-                <h1>Validando formulários com JavaScript</h1>
-              </a>
-              <p>Esse projeto foi feito para desenvolver melhor minhas habilidades de escrita e no JavaScript. Foi
-                uma validação de formulários onde pode colocar os dados e se falhar foi por falta de algum dado.
-              </p>
-            </div>
-
-            <picture class="project-img">
-              <img src="imagens/validando-formulários.avif" alt="validando formulários">
-            </picture>
-
-          </div>
-
-      </div>
-    </section>
-
-  </main>
-
 
   <footer id="footer">
     <div class="redes">
