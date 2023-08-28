@@ -102,6 +102,28 @@ p {
   text-align: center;
 }
 
+button {
+  padding: 1.4rem;
+
+  color: #fff;
+  background-color: hsl(45, 100%, 57%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  letter-spacing: 0.2rem;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  transition-property: background-color, color;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: var(--orange-yellow-crayola);
+  font-weight: 500;
+}
+
 /* Declarações gerais */
 
 /*Menu*/
@@ -405,6 +427,58 @@ p {
 }
 
 /* Formulário */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.form .form-input {
+  max-width: 100%;
+  width: 108rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.4rem;
+  border-radius: 8px;
+
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border: 1px solid #393a3a;
+  color: var(--light-gray);
+}
+
+.form .form-input::placeholder {
+  color: var(--light-gray-70);
+}
+
+/* Footer */
+footer {
+  background-color: var(--eerie-black-2);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+}
+
+.redes a {
+  padding: 1rem;
+}
 
 /* keyframes */
 @keyframes text_reveal {

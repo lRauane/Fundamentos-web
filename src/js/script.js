@@ -32,7 +32,7 @@ function createRepoCard(repo) {
 
   const descriptionElement = document.createElement("div");
   descriptionElement.classList.add("repo-description");
-  descriptionElement.textContent = repo.description || "No description available.";
+  descriptionElement.textContent = repo.description || "Sem descrição.";
 
   const githubLinkElement = document.createElement("a");
   githubLinkElement.classList.add("repo-link");

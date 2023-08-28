@@ -5,6 +5,12 @@
     display: block;
   }
 
+  .title {
+
+    font-size: 3rem;
+
+  }
+
   #menu {
     display: block;
     position: absolute;
@@ -96,6 +102,10 @@
   .repo-container {
     display: grid;
     grid-template-columns: 1fr;
+    width: 30rem;
+  }
+
+  .form .form-input {
     width: 30rem;
   }
 }
