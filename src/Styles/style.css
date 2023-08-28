@@ -147,10 +147,12 @@ p {
   margin-bottom: 30rem;
   margin-top: 30rem;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .wrapper img {
   width: 300px;
   border-radius: 8px;
@@ -243,15 +245,18 @@ p {
   border: 2px solid #393a3a;
   padding: 5rem;
 }
+
 .about-container {
   background-color: var(--eerie-black-1);
   border-radius: 8px;
 }
+
 .about-container img {
   border-radius: 8px;
   width: 300px;
   height: 300px;
 }
+
 .about-infos .about-doing ul {
   color: #fff;
   font-size: 1.5rem;
@@ -260,6 +265,7 @@ p {
   flex-wrap: wrap;
   margin-top: 2rem;
 }
+
 .about-infos .about-doing ul li {
   list-style: none;
   background-color: hsl(45, 36%, 53%);
@@ -270,60 +276,6 @@ p {
 .about-container p {
   color: var(--light-gray);
   font-size: 1.5rem;
-}
-
-/*seção portifólio*/
-.repo-card {
-  border: 1px solid #525050;
-  padding: 3rem;
-  max-width: 100%;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: var(--eerie-black-1);
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.repo-container {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  width: 110rem;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.projects .more {
-  font-size: 1.5rem;
-  color: var(--eerie-black-1);
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 1rem;
-  background-color: var(--orange-yellow-crayola);
-}
-
-.repo-name {
-  font-size: 1.8rem;
-  color: var(--light-gray);
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.repo-description {
-  font-size: 1.6rem;
-  color: var(--light-gray-70);
-}
-
-.repo-link {
-  background-color: var(--orange-yellow-crayola);
-  padding: 1.3rem;
-  color: #333;
-  font-weight: 700;
-  font-size: 1.3rem;
-  border-radius: 8px;
 }
 
 /* Experiencias */
@@ -398,6 +350,61 @@ p {
   text-align: start;
 }
 
+/*seção portfólio*/
+.repo-card {
+  border: 1px solid #525050;
+  padding: 3rem;
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--eerie-black-1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.repo-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 110rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .more {
+  font-size: 1.5rem;
+  color: var(--eerie-black-1);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  background-color: var(--orange-yellow-crayola);
+}
+
+.repo-name {
+  font-size: 1.8rem;
+  color: var(--light-gray);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.repo-description {
+  font-size: 1.6rem;
+  color: var(--light-gray-70);
+}
+
+.repo-link {
+  background-color: var(--orange-yellow-crayola);
+  padding: 1.3rem;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+
+/* Formulário */
 
 /* keyframes */
 @keyframes text_reveal {

@@ -3,7 +3,7 @@ const btnmobile = document.getElementById('btn-mobile');
 const repos = document.getElementById('repo-container');
 
 // API github
-const apiURL = 'https://api.github.com/users/lrauane/repos?per_page=15';
+const apiURL = 'https://api.github.com/users/lrauane/repos?per_page=10';
 
 // Solicitação api
 fetch(apiURL)
