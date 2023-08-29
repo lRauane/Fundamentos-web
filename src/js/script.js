@@ -36,13 +36,31 @@ function createRepoCard(repo) {
 
   const githubLinkElement = document.createElement("a");
   githubLinkElement.classList.add("repo-link");
-  githubLinkElement.textContent = "GitHub Repository";
+  githubLinkElement.textContent = "GitHub";
   githubLinkElement.href = repo.html_url;
   githubLinkElement.target = "_blank"; // Abre o link em uma nova aba
+
+  const deployLinkElement = document.createElement("a");
+  
+  
+  // Verifica se o repositório tem uma URL de deploy
+  if (repo.homepage) {
+    deployLinkElement.textContent = "Visitar site";
+    deployLinkElement.href = repo.homepage;
+    deployLinkElement.classList.add("repo-link");
+    deployLinkElement.target = "_blank"; // Abre o link em uma nova aba
+  } else {
+    deployLinkElement.textContent = "Sem Deploy";
+    deployLinkElement.style.color = "#999"; // Altera a cor para indicar inatividade
+  }
+
+
 
   card.appendChild(nameElement);
   card.appendChild(descriptionElement);
   card.appendChild(githubLinkElement);
+  card.appendChild(deployLinkElement);
+
 
 
   return card;

@@ -19,7 +19,7 @@
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right,
     hsl(45, 100%, 71%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
+    hsla(51, 44%, 66%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
       135deg,
@@ -35,7 +35,7 @@
   --text-gradient-yellow: linear-gradient(
     to right,
     hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
+    hsl(35, 78%, 70%)
   );
 
   /* solid */
@@ -47,11 +47,10 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --orange-yellow-crayola: hsl(45, 88%, 61%);
+  --titles: hsl(49, 94%, 57%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
 }
 
 /* Declarações gerais */
@@ -97,31 +96,32 @@ p {
 }
 
 .title {
-  color: var(--orange-yellow-crayola);
+  color: var(--titles);
   font-size: 4rem;
   text-align: center;
 }
 
-button {
+button, .more {
   padding: 1.4rem;
-
-  color: #fff;
+  font-weight: 700;
+  color: #333;
   background-color: hsl(45, 100%, 57%);
   font-size: 1.5rem;
   text-transform: uppercase;
 
-  letter-spacing: 0.2rem;
   border-radius: 8px;
-  transition: 0.5s ease;
-  transition-property: background-color, color;
+
   border: 0;
   cursor: pointer;
 }
+button, .more{
+  transition: 0.5s ease;
+  transition-property: background-color, color;
+}
 
-button:hover {
+button:hover, .projects .more:hover{
   color: white;
   background: var(--orange-yellow-crayola);
-  font-weight: 500;
 }
 
 /* Declarações gerais */
@@ -225,7 +225,7 @@ button:hover {
   width: 0%;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
-  background-color: var(--cor-destaque--);
+  background: var(--text-gradient-yellow);
 }
 .presentation h1:nth-child(1) span {
   animation-delay: 0.5s;
@@ -280,7 +280,7 @@ button:hover {
 }
 
 .about-infos .about-doing ul {
-  color: #fff;
+  color: #333;
   font-size: 1.5rem;
   gap: 2rem;
   display: flex;
@@ -290,7 +290,7 @@ button:hover {
 
 .about-infos .about-doing ul li {
   list-style: none;
-  background-color: hsl(45, 36%, 53%);
+  background-color: var(--orange-yellow-crayola);
   padding: 1rem;
   border-radius: 8px;
 }
@@ -389,21 +389,17 @@ button:hover {
   display: grid;
   grid-template-columns: 2fr 2fr;
   width: 110rem;
+  margin-bottom: 2rem;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.projects .more {
-  font-size: 1.5rem;
-  color: var(--eerie-black-1);
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 1rem;
-  background-color: var(--orange-yellow-crayola);
 }
+
 
 .repo-name {
   font-size: 1.8rem;
@@ -418,12 +414,20 @@ button:hover {
 }
 
 .repo-link {
-  background-color: var(--orange-yellow-crayola);
-  padding: 1.3rem;
+  background: var(--orange-yellow-crayola);
+  padding: 1.5rem;
   color: #333;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repo-link:hover{
+  opacity: 0.9;
 }
 
 /* Formulário */
